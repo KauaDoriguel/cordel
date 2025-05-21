@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+.sriracha-regular {
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,6 +14,7 @@
 body{
     min-height: 100vh;
     background-color: darkgray;
+    
 }
 
 header{
@@ -18,9 +26,13 @@ header{
 header h1 {
     padding-top: 50px;
     text-transform: uppercase;
+    font-size: 3vw;
 }
 header p{
     padding-bottom: 50px;
+    font-size: 2vw;
+
+    
 }
 
 a {
@@ -38,6 +50,13 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 70px;
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.4vw;
+}
+section p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -48,11 +67,26 @@ section.normal {
 section.imagem{
     background-color: rgb(128, 128, 128);
     color: aliceblue;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+    background-attachment: fixed;
 }
 
 section.imagem p {
-    width:300PX;
-    background-color: black;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 20px;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
 }
 
 footer {
